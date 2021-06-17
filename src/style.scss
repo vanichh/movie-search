@@ -1,0 +1,115 @@
+@import 'poster-info';
+@import 'animation-loading';
+@import 'container-poster';
+
+:root {
+  --color-green-main: #50C878;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: roboto, sans-serif;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  background-color: var(--color-green-main);
+  padding-left: 5px;
+}
+
+.header-text {
+  color: #fff;
+  font-weight: bold;
+  margin-right: 10px;
+  margin-left: 5px;
+}
+
+.header-input {
+  box-sizing: padding-box;
+  padding-left: 12px;
+  height: 30px;
+  border: none;
+  width: 200px;
+  transition-property: width;
+  transition-duration: 0.6s;
+  transition-timing-function: ease;
+  min-width: 50px;
+  border-radius: 12px;
+}
+
+.header-input:focus {
+  height: 30px;
+  outline: none;
+  width: 350px;
+}
+
+.accurate_search {
+  color: white;
+  padding-left: 10px;
+}
+
+input[type="checkbox"] {
+  margin-right: 20px;
+  display: block;
+  appearance: none;
+  height: 15px;
+  width: 15px;
+  border: 3px solid white;
+  border-radius: 50%;
+  margin-top: 5px;
+  margin-left: 5px;
+  transition: all 0.2s ease;
+}
+
+input[type="checkbox"]:checked {
+  background-color: #5b60f0;
+}
+
+input[type="checkbox"]:focus {
+  outline: none;
+}
+
+.container {
+  margin: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 5px;
+  margin-top: 5px;
+}
+
+.totalResults {
+  padding: 0;
+  margin: 14px;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.scroll-top {
+  $size: 50px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  height: $size;
+  width: $size;
+  padding: 0;
+  border: none;
+  color: white;
+  font-size: $size/2;
+  border-radius: 50%;
+  background-color: var(--color-green-main);
+  opacity: .5;
+  transition: opacity .3s ease;
+
+  &:hover {
+    opacity: 1;
+    cursor: pointer;
+  }
+}

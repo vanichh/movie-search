@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+  <div class="header">
+    <p class="header-text">Поиск</p>
+    <input class="header-input" type="search">
+  </div>
+  <P class="totalResults"></P>
+  <div class="container">
+  </div>
+  <template id="template">
+    <div class="container-poster">
+      <a target="_blank" class="container-poster-title"></a>
+      <p class="container-poster-info"></p>
+      <div class="container-poster-img">
+      </div>
+    </div>
+  </template>
+  <template id="template-2">
+    <div class="poster-kino-background">
+      <div class="container-poster-kino">
+        <button class="container-poster-close">×</button>
+        <div class="container-poster-img-1">
+        </div>
+        <ul class="container-poster-info-1">
+          <li>
+            <a target="_blank">
+              <h2></h2>
+            </a>
+          </li>
+          <li>
+            <p>Выход:</p>
+            <p></p>
+          </li>
+          <li>
+            <p>Время:</p>
+            <p></p>
+          </li>
+          <li>
+            <p>Жанр:</p>
+            <p></p>
+          </li>
+          <li>
+            <p>Режиссер:</p>
+            <p></p>
+          </li>
+          <li>
+            <p>Актеры:</p>
+            <p></p>
+          </li>
+          <li>
+            <p>Сюжет:</p>
+            <p></p>
+          </li>
+          <li>
+            <p>Язык:</p>
+            <p></p>
+          </li>
+          <li>
+            <p>Рейтинг IMDb:</p>
+            <p></p>
+          </li>
+          <li>
+            <p>Сборы:</p>
+            <p></p>
+          </li>
+          <li>
+            <p>Производство:</p>
+            <p></p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </template>
+  <button hidden class="scroll-top">↑</button>
+  <script src="index.js"></script>
+</body>
+
+</html>
